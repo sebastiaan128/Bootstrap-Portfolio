@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark a">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bit-codes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal"
+                                data-target="#confirmLogoutModal">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" id="confirmLogoutModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Weet je zeker dat je wilt uitloggen?</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Nee</button>
+                    <a class="btn btn-success" href="logout.html">Ja</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="py-5"
+        style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg'); background-size: cover; background-position: center; height: 50vh;">
+        <div class="container-fluid h-50 d-flex align-items-center justify-content-center text-white">
+            <div class="column d-flex flex-column align-items-center mt-5">
+                <h1><strong>~ Sebastiaan ~</strong></h1>
+                <p><strong>Bit-Codes</strong></p>
+                <div class="container">
+                    <div class="text-center m">
+                        <a href="#contact" class="btn btn-invisible text-white border">Contact Me!</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container d-flex justify-content-center mb-5">
+        <h2>Skills</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center mt-3"><strong>Programming
+                                Languages:</strong>
+                        </h5>
+                        <hr>
+                        <section id="skills" class="skills">
+                            <div class="text-center">
+
+                                <p>HTML</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-succes progress-bar-striped" role="progressbar"
+                                        style="width: 60%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <hr>
+                                <p>CSS</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary progress-bar-striped" role="progressbar"
+                                        style="width: 58%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <hr>
+                                <p>Javascript</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar"
+                                        style="width: 40%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <hr>
+                                <p>Bootstrap</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger progress-bar-striped" role="progressbar"
+                                        style="width: 64%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="Certificates rounded border">
+                    <div class="card-body">
+                        <h5 class="mt-4 card-title d-flex justify-content-center">
+                            <strong>Certificates:</strong>
+                        </h5>
+                        <hr>
+                        <div class="tekst d-flex justify-content-center mt-4">
+                            <p><strong>Bit Academy:</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item">PHP web</li>
+                            <li class="list-group-item">Bootstrap</li>
+                        </ul>
+                        <div class="tekst d-flex justify-content-center mt-4">
+                            <p><strong>Nexed:</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item">Javascript</li>
+                            <li class="list-group-item">PHP novice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center mt-2 mb-5">
+        <h2>Projects</h2>
+    </div>
+    <section id="Projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://vscode-themes.nyc3.cdn.digitaloceanspaces.com/profiles/vlNyHjTgGMejKZJAyvlvURT2SDi1/pIYlLD0S-thumbnail.jpeg?v=1616748489557"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div><b>VSCode - Extensies en enviroment</b></div>
+                            <a href="#">Bekijk project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://images0.persgroep.net/rcs/vX_xCmpdBvTl9RVTDb3qpLtaB1U/diocontent/100695927/_focus/0.21/0.28/_fill/1200/630/?appId=21791a8992982cd8da851550a453bd7f&quality=0.7"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div><b>GPS - Fietscomputers voor Satelitebike</b></div>
+                            <a href="#">Bekijk project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://www.rei.com/dam/parrish_091412_0679_main_lg.jpg?t=ea16by9xs"
+                            class="card-img-top" alt="parrish">
+                        <div class="card-body text-center">
+                            <div><b>Vue - Frontend voor HikeGPS</b></div>
+                            <a href="#">Bekijk project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://webshop.gereformeerdekerkoldebroek.nl/wp-content/uploads/2021/05/Aardbei-buitenlands.jpg"
+                            class="card-img-top" alt="aardbei">
+                        <div class="card-body text-center">
+                            <div><b> React - Frontend voor BerryFarm</b></div>
+                            <a href="#">Bekijk project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://static1.squarespace.com/static/53f03754e4b098e57eb29607/568b67a6b204d5a4f87db998/5d66559915b6c6000188c275/1567011994716/?format=200w"
+                            class="card-img-top" alt="static">
+                        <div class="card-body text-center">
+                            <div><b> Backend - Always Darkmode </b></div>
+                            <a href="#">Bekijk project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://www.stouchlighting.com/hubfs/Lighting%20Shades%20Blog%20Sized%20Image.png"
+                            class="card-img-top" alt="hue">
+                        <div class="card-body text-center">
+                            <div><b>Lua - Lighting controller</b></div>
+                            <a href="#">Bekijk project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container d-flex justify-content-center mt-2 mb-5">
+        <h2>Contact</h2>
+    </div>
+    <form id="contact" class="py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 d-flex flex-column">
+                    <p class="text-center">Naam:</p>
+                    <input class="form-control">
+                    <p class="text-center">E-mail:</p>
+                    <input class="form-control">
+                    <p class="text-center">Bedrijf:</p>
+                    <input class="form-control">
+                    <p class="text-center">Je bericht</p>
+                    <input class="form-control">
+                    <div class="d-flex justify-content-center mt-3">
+                        <input type="submit" value="Verzenden" class="btn btn-primary">
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <p class="text-center mt-2">Nieuwegein, Harmonielaan 1, Nederland</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                    <p class="text-center mt-2">+ 01 234 567 89</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                    </svg>
+                    <p class="text-center mt-2">581150@edu.rocmn.nl</p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-bs-toggle="dropdown"]').dropdown();
+        });
+    </script>
+</body>
+
+</html>
